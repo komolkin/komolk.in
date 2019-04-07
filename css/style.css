@@ -1,7 +1,7 @@
 @import url("animation.css");
 
 body {
-  background: #ffffff;
+  background: #141414;
   -webkit-animation: colour 50s linear infinite;
 	-moz-animation: colour 50s linear infinite;
 }
