@@ -188,7 +188,7 @@ a:hover {
 	margin: 0;
 	padding: 0;
 	table-layout: fixed;
-	min-width: 600px;
+	max-width: 600px;
 }
 
 span {
