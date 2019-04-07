@@ -10,14 +10,14 @@ body {
 	0% { background:#5e5e5e }
 	40% { background:#176b68 }
 	80% { background:#173963 }
-	100% { background:#176b68 }
+	100% { background:#5e5e5e }
 }
 
 @-moz-keyframes colour{
 	0% { background:#5e5e5e }
 	40% { background:#176b68 }
 	80% { background:#173963 }
-	100% { background:#176b68 }
+	100% { background:#5e5e5e }
 }
 
 /*html {
