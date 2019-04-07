@@ -8,14 +8,16 @@ body {
 
 @-webkit-keyframes colour{
 	0% { background:#176b68 }
-	50% { background:#5e5e5e }
-	100% { background:#173963 }
+	40% { background:#5e5e5e }
+	80% { background:#173963 }
+	100% { background:#176b68 }
 }
 
 @-moz-keyframes colour{
   0% { background:#176b68 }
-	50% { background:#5e5e5e }
-	100% { background:#173963 }
+	40% { background:#5e5e5e }
+	80% { background:#173963 }
+	100% { background:#176b68 }
 }
 
 /*html {
