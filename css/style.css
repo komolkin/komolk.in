@@ -7,39 +7,17 @@ body {
 }
 
 @-webkit-keyframes colour{
-	0%{
-		background:#ff8b8b
-	}
-
-	40%{
-		background:#e54b4b
-	}
-
-	80%{
-		background:#005397
-	}
-
-	100%{
-		background:#ff8b8b
-	}
+	0% { background:#ff8b8b }
+	40% { background:#e54b4b }
+	80% { background:#005397 }
+	100% { background:#ff8b8b }
 }
 
 @-moz-keyframes colour{
-  0%{
-		background:#ff8b8b
-	}
-
-	40%{
-		background:#e54b4b
-	}
-
-	80%{
-		background:#005397
-	}
-
-	100%{
-		background:#ff8b8b
-	}
+  0% { background:#ff8b8b }
+	40% { background:#e54b4b }
+	80% { background:#005397 }
+	100% { background:#ff8b8b }
 }
 
 /*html {
@@ -51,23 +29,23 @@ body {
 }*/
 
 .symbol, a.symbol:before {
-    font-family: 'Mono Social Icons Font';
-    -webkit-text-rendering: optimizeLegibility;
-    -moz-text-rendering: optimizeLegibility;
-    -ms-text-rendering: optimizeLegibility;
-    -o-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -ms-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+	font-family: 'Mono Social Icons Font';
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	-ms-text-rendering: optimizeLegibility;
+	-o-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 }
 
 a.symbol:before {
-    content: attr(title);
-    margin-right: 0.3em;
-    font-size: 130%;
+	content: attr(title);
+	margin-right: 0.3em;
+	font-size: 130%;
 }
 
 body {
@@ -78,9 +56,9 @@ body {
 *,
 *:after,
 *::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 nav a {
@@ -102,48 +80,6 @@ span {
   transform: translateZ(0);
 }
 
-/*nav a:hover .dribbble,
-nav a:focus .dribbble {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-nav a:hover .twitter,
-nav a:focus .twitter {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-nav a:hover .tumblr,
-nav a:focus .tumblr {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-nav a:hover .instagram,
-nav a:focus .instagram {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-nav a:hover .github,
-nav a:focus .github {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-nav a:hover .pinterest,
-nav a:focus .pinterest {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-nav a:hover .email,
-nav a:focus .email {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}*/
-
 a {
 	color: #ffffff;
 	text-decoration: none;
@@ -162,11 +98,11 @@ a:hover {
 	width: 90px;
 	height: 90px;
 	border-radius: 90px;
-    margin: 0 auto 50px;
+	margin: 0 auto 50px;
 	background: url('../images/userpic.png') no-repeat;
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 	-webkit-animation: logoFloat 2s infinite ease both;
 	-moz-animation: logoFloat 2s infinite ease both;
 	-ms-animation: logoFloat 2s infinite ease both;
