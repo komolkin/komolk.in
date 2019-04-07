@@ -204,7 +204,7 @@ span {
 }
 
 .about {
-	width: 860px;
+	max-width: 600px;
 	white-space: normal;
 	margin: 0 auto;
 }
