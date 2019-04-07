@@ -129,7 +129,11 @@ a:hover {
 .container {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.about {
 	width: 480px;
+	margin: 0 auto;
 }
 
 span {
