@@ -1,12 +1,12 @@
 @import url("animation.css");
 
 body {
-  background: #141414;
+  background: #ffffff;
   -webkit-animation: colour 50s linear infinite;
 	-moz-animation: colour 50s linear infinite;
 }
 
-/*@-webkit-keyframes colour{
+@-webkit-keyframes colour{
 	0%{
 		background:#ff8b8b
 	}
@@ -40,7 +40,7 @@ body {
 	100%{
 		background:#ff8b8b
 	}
-}*/
+}
 
 /*html {
   background: url(../images/bg.png) no-repeat center center fixed;
