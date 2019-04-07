@@ -9,14 +9,14 @@ body {
 @-webkit-keyframes colour{
 	0% { background:#176b68 }
 	40% { background:#5e5e5e }
-	80% { background:#005397 }
+	80% { background:#173963 }
 	100% { background:#ff8b8b }
 }
 
 @-moz-keyframes colour{
   0% { background:#ff8b8b }
 	40% { background:#5e5e5e }
-	80% { background:#005397 }
+	80% { background:#173963 }
 	100% { background:#ff8b8b }
 }
 
