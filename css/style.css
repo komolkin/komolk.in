@@ -199,6 +199,7 @@ span {
 }
 
 .container {
+	max-width: 600px;
 	display: table-cell;
 	vertical-align: middle;
 }
