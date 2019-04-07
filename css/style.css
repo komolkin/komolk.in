@@ -191,17 +191,17 @@ a:hover {
 	max-width: 600px;
 }
 
+.container {
+	display: table-cell;
+	vertical-align: middle;
+	width: 480px;
+}
+
 span {
 	/*color: #c7ced5;*/
 	color: #ffffff;
 	margin: 0 5px;
 	font-weight: 300;
-}
-
-.container {
-	display: table-cell;
-	vertical-align: middle;
-	width: 480px;
 }
 
 /* .about {
