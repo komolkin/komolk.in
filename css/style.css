@@ -188,7 +188,7 @@ a:hover {
 	margin: 0;
 	padding: 0;
 	table-layout: fixed;
-	min-width: 600px;
+	min-width: 320px;
 }
 
 span {
@@ -199,13 +199,12 @@ span {
 }
 
 .container {
-	max-width: 600px;
+	max-width: 480px;
 	display: table-cell;
 	vertical-align: middle;
 }
 
 .about {
-	max-width: 600px;
 	white-space: normal;
 	margin: 0 auto;
 }
