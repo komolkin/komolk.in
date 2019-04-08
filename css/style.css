@@ -132,3 +132,7 @@ h4 {
 	background: #266678;
 	color: #c7d7e5;
 }
+
+::-webkit-scrollbar {
+	display: none;
+}
