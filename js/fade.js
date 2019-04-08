@@ -1,7 +1,7 @@
 var classes = [
     '☻',
     'Hi',
-    'Im Ilya',
+    'I\'m Ilya',
     'Product Designer',
     'addicted to simplicity',
     'and aesthetic'

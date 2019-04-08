@@ -9,28 +9,28 @@ body {
 @-webkit-keyframes bg-color {
 	0% { background:#c7d7e5 }
 	40% { background:#f6dec6 }
-	80% { background:#cbd7cb }
+	80% { background:#ebc7cb }
 	100% { background:#c7d7e5 }
 }
 
 @-moz-keyframes bg-color {
 	0% { background:#c7d7e5 }
 	40% { background:#f6dec6 }
-	80% { background:#cbd7cb }
+	80% { background:#ebc7cb }
 	100% { background:#c7d7e5 }
 }
 
 @-webkit-keyframes text-color {
 	0% { color:#266678 }
 	40% { color:#ac8649 }
-	80% { color:#3c9886 }
+	80% { color:#ba746f }
 	100% { color:#266678 }
 }
 
 @-moz-keyframes text-color {
 	0% { color:#266678 }
 	40% { color:#ac8649 }
-	80% { color:#3c9886 }
+	80% { color:#ba746f }
 	100% { color:#266678 }
 }
 
@@ -108,7 +108,7 @@ h2 {
 
 h3 {
 	line-height: 1.5;
-	font-weight: 800;
+	font-weight: 600;
 	font-size: 1.5em;
 	margin-bottom: -16px;
 }
