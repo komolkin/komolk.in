@@ -52,9 +52,9 @@
 				function showNextMessage() {
 				++messageIndex;
 				message.eq(messageIndex % message.length)
-						.fadeIn(400)
-						.delay(4000)
-						.fadeOut(400, showNextMessage);
+						.fadeIn(5000)
+						.delay(10000)
+						.fadeOut(5000, showNextMessage);
 				}
 				showNextMessage();
 			})();
