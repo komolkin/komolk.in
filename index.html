@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Ilya Komolkin</title>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="js/typed.js"></script>
+	<!-- <script src="js/typed.js"></script> -->
 	<!-- <script>
 		document.addEventListener('DOMContentLoaded', function(){
 			Typed.new('.element', {
@@ -54,18 +54,18 @@
 			</div>
 		</div>
 		<script>
-		(function() {
-			var message = $(".message");
-			var messageIndex = -1;
-			function showNextMessage() {
-			++messageIndex;
-			message.eq(messageIndex % message.length)
-					.fadeIn(400)
-					.delay(4000)
-					.fadeOut(400, showNextMessage);
-			}
-			showNextMessage();
-		})();
+			(function() {
+				var message = $(".message");
+				var messageIndex = -1;
+				function showNextMessage() {
+				++messageIndex;
+				message.eq(messageIndex % message.length)
+						.fadeIn(400)
+						.delay(4000)
+						.fadeOut(400, showNextMessage);
+				}
+				showNextMessage();
+			})();
 		</script>
 	</body>
 </html>
