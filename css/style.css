@@ -1,5 +1,12 @@
 @import url("animation.css");
 
+@keyframes bg-color {
+	0% { background:#c7d7e5 }
+	40% { background:#f6dec6 }
+	80% { background:#ebc7cb }
+	100% { background:#c7d7e5 }
+}
+
 @-webkit-keyframes bg-color {
 	0% { background:#c7d7e5 }
 	40% { background:#f6dec6 }
@@ -12,6 +19,13 @@
 	40% { background:#f6dec6 }
 	80% { background:#ebc7cb }
 	100% { background:#c7d7e5 }
+}
+
+@keyframes text-color {
+	0% { color:#266678 }
+	40% { color:#ac8649 }
+	80% { color:#ba746f }
+	100% { color:#266678 }
 }
 
 @-webkit-keyframes text-color {
@@ -29,6 +43,7 @@
 }
 
 html {
+	animation: bg-color 50s linear infinite;
 	-webkit-animation: bg-color 50s linear infinite;
 	-moz-animation: bg-color 50s linear infinite;
 }
@@ -40,6 +55,7 @@ body {
 }
 
 body, a {
+	animation: text-color 50s linear infinite;
 	-webkit-animation: text-color 50s linear infinite;
 	-moz-animation: text-color 50s linear infinite;
 }
@@ -94,14 +110,13 @@ a:hover {
 
 h3 {
 	font-size: 1.6em;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 h4 {
 	font-size: 1.2em;
-	font-weight: 700;
+	font-weight: 500;
 	opacity: .6;
-	/* font-weight: 400; */
 }
 
 h3, h4 {
