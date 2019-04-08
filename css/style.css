@@ -52,7 +52,7 @@ body, a, span {
 	box-sizing: border-box;
 }
 
-span {
+/* span {
 	display: inline-block;
 	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
@@ -60,7 +60,7 @@ span {
 	transition-property: transform;
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
-}
+} */
 
 a {
 	text-decoration: none;
