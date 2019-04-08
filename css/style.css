@@ -8,13 +8,13 @@ body {
 
 @-webkit-keyframes colour{
 	0% { background:#5e5e5e }
-	50% { background:#173963 }
+	50% { background:#000000 }
 	100% { background:#5e5e5e }
 }
 
 @-moz-keyframes colour{
 	0% { background:#5e5e5e }
-	50% { background:#173963 }
+	50% { background:#000000 }
 	100% { background:#5e5e5e }
 }
 
