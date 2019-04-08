@@ -1,6 +1,6 @@
 @import url("animation.css");
 
-body {
+html {
 	-webkit-animation: bg-color 50s linear infinite;
 	-moz-animation: bg-color 50s linear infinite;
 }
@@ -38,7 +38,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-h3, h4, a {
+body, a {
 	-webkit-animation: text-color 50s linear infinite;
 	-moz-animation: text-color 50s linear infinite;
 }
