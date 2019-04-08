@@ -70,8 +70,6 @@ body, a {
 
 a {
 	text-decoration: none;
-	font-weight: 700;
-	opacity: 1;
 	-webkit-transition: -webkit-all .3s ease;
 	-moz-transition: -moz-all .3s ease;
 	transition: all .3s ease;
@@ -79,7 +77,6 @@ a {
 
 a:hover {
 	text-decoration: none;
-	opacity: .6;
 }
 
 .wrapper {
