@@ -55,7 +55,7 @@ body, a {
 a {
 	text-decoration: none;
 	font-weight: 700;
-	color: rgba(0, 0, 0, 1);
+	opacity: 1;
 	-webkit-transition: -webkit-all .3s ease;
 	-moz-transition: -moz-all .3s ease;
 	transition: all .3s ease;
@@ -63,7 +63,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: rgba(0, 0, 0, .6);
+	opacity: .6;
 }
 
 .wrapper {
@@ -100,7 +100,7 @@ h3 {
 h4 {
 	font-size: 1.2em;
 	font-weight: 700;
-	color: rgba(0, 0, 0, .6);
+	opacity: .6;
 	/* font-weight: 400; */
 }
 
