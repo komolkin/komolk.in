@@ -62,9 +62,9 @@ body, a, span {
 	transform: translateZ(0);
 } */
 
-/* .message {
+.message {
 	display: none;
-} */
+}
 
 a {
 	text-decoration: none;
