@@ -32,13 +32,16 @@
 					<!-- <h3 class="animate fadeInUp queue2s" style="font-weight: bolder;">
 						I'm Ilya, Digital Product Designer addicted to simplicity and aesthetic
 					</h3> -->
-					<a href="#" class="animate fadeInUp queue2s">
+					<div id="tst">
+						<h3 style="display: none;"></h3>
+					</div>
+					<!-- <a href="#" class="animate fadeInUp queue2s">
 						<span class="message">☻</span>
 						<span class="message">Hi</span>
 						<span class="message">I'm Ilya, Product Designer</span>
 						<span class="message">addicted to simplicity</span>
 						<span class="message">and aesthetic</span>
-					</a>
+					</a> -->
 					<h4 class="animate fadeInUp queue3s">
 						You can find me listening music on <a href="https://open.spotify.com/user/komolkin-us">Spotify</a>, <br>trying to code on <a href="https://github.com/komolkin">GitHub</a>, never posting on <a href="https://dribbble.com/komolkin">Dribbble</a> <br>and documenting travels on <a href="https://www.instagram.com/komolkin/">Instagram</a>.
 					</h4>
@@ -46,18 +49,21 @@
 			</div>
 		</div>
 		<script>
-			(function() {
-				var message = $(".message");
-				var messageIndex = -1;
-				function showNextMessage() {
-				++messageIndex;
-				message.eq(messageIndex % message.length)
-						.fadeIn(5000)
-						.delay(10000)
-						.fadeOut(5000, showNextMessage);
-				}
-				showNextMessage();
-			})();
+			var classes = [
+				'☻',
+				'Hi',
+				'Im Ilya, Product Designer',  
+				'addicted to simplicity',
+				'and aesthetic'
+			];
+
+			(function displayClass(i) {
+				$('#tst h1').text(classes[i]).fadeIn(1000, function() {
+					$(this).delay(600).fadeOut(1000, function() {
+						displayClass((i + 1) % classes.length);
+					});
+				});
+			})(0);
 		</script>
 	</body>
 </html>
