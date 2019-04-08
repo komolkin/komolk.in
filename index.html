@@ -5,6 +5,24 @@
 	<title>Ilya Komolkin</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/fade.js"></script>
+	<!-- <script>
+		var classes = [
+			'☻',
+			'Hi',
+			'Im Ilya, Product Designer',  
+			'addicted to simplicity',
+			'and aesthetic'
+		];
+
+		(function displayClass(i) {
+			$('#tst h3').text(classes[i]).fadeIn(1000, function() {
+				$(this).delay(600).fadeOut(1000, function() {
+					displayClass((i + 1) % classes.length);
+				});
+			});
+		})(0);
+	</script> -->
 	<!-- <script src="js/typed.js"></script> -->
 	<!-- <script>
 		document.addEventListener('DOMContentLoaded', function(){
@@ -32,7 +50,7 @@
 					<!-- <h3 class="animate fadeInUp queue2s" style="font-weight: bolder;">
 						I'm Ilya, Digital Product Designer addicted to simplicity and aesthetic
 					</h3> -->
-					<div id="tst">
+					<div id="tst" class="animate fadeInUp queue2s">
 						<h3 style="display: none;"></h3>
 					</div>
 					<!-- <a href="#" class="animate fadeInUp queue2s">
@@ -48,22 +66,5 @@
 				</div>
 			</div>
 		</div>
-		<script>
-			var classes = [
-				'☻',
-				'Hi',
-				'Im Ilya, Product Designer',  
-				'addicted to simplicity',
-				'and aesthetic'
-			];
-
-			(function displayClass(i) {
-				$('#tst h3').text(classes[i]).fadeIn(1000, function() {
-					$(this).delay(600).fadeOut(1000, function() {
-						displayClass((i + 1) % classes.length);
-					});
-				});
-			})(0);
-		</script>
 	</body>
 </html>
