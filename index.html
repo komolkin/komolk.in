@@ -5,7 +5,7 @@
 	<title>Ilya Komolkin</title>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/typed.js"></script>
-	<script>
+	<!-- <script>
 		document.addEventListener('DOMContentLoaded', function(){
 			Typed.new('.element', {
 				strings: ["☻", "Hello", "敬禮", "Bonjour", "Привет"],
@@ -17,7 +17,7 @@
 				typeSpeed: 100
 			});
 		});
-	</script>
+	</script> -->
 	<link data-fontset-id="ce-fontset" href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 	<script>
@@ -34,11 +34,18 @@
 		<div class="wrapper">
 			<div class="container">
 				<div class="about">
-					<h2 class="animate fadeInUp queue1s" style="font-weight: bolder;">
+					<!-- <h2 class="animate fadeInUp queue1s" style="font-weight: bolder;">
 						<div class="element" style="height: 24px;"></div>
-					</h2>
-					<h3 class="animate fadeInUp queue2s" style="font-weight: bolder;">
+					</h2> -->
+					<!-- <h3 class="animate fadeInUp queue2s" style="font-weight: bolder;">
 						I'm Ilya, Digital Product Designer addicted to simplicity and aesthetic
+					</h3> -->
+					<h3 class="animate fadeInUp queue2s">
+						<span class="message">☻</span>
+						<span class="message">Hi</span>
+						<span class="message">I'm Ilya, Product Designer</span>
+						<span class="message">addicted to simplicity</span>
+						<span class="message">and aesthetic</span>
 					</h3>
 					<h4 class="animate fadeInUp queue3s">
 						You can find me listening music on <a href="https://open.spotify.com/user/komolkin-us">Spotify</a>, <br>trying to code on <a href="https://github.com/komolkin">GitHub</a>, never posting on <a href="https://dribbble.com/komolkin">Dribbble</a> <br>and documenting travels on <a href="https://www.instagram.com/komolkin/">Instagram</a>.
@@ -46,5 +53,19 @@
 				</div>
 			</div>
 		</div>
+		<script>
+		(function() {
+			var message = $(".message");
+			var messageIndex = -1;
+			function showNextMessage() {
+			++messageIndex;
+			message.eq(messageIndex % message.length)
+					.fadeIn(400)
+					.delay(4000)
+					.fadeOut(400, showNextMessage);
+			}
+			showNextMessage();
+		})();
+		</script>
 	</body>
 </html>
