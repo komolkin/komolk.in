@@ -2,18 +2,18 @@
 
 body {
 	background: #ffffff;
-	-webkit-animation: colour 50s linear infinite;
-	-moz-animation: colour 50s linear infinite;
+	-webkit-animation: bg-color 50s linear infinite;
+	-moz-animation: bg-color 50s linear infinite;
 }
 
-@-webkit-keyframes colour {
+@-webkit-keyframes bg-color {
 	0% { background:#c7d7e5 }
 	40% { background:#f6dec6 }
 	80% { background:#cbd7cb }
 	100% { background:#c7d7e5 }
 }
 
-@-moz-keyframes colour {
+@-moz-keyframes bg-color {
 	0% { background:#c7d7e5 }
 	40% { background:#f6dec6 }
 	80% { background:#cbd7cb }
@@ -118,8 +118,8 @@ h4 {
 }
 
 ::selection {
-	background: #000000;
-	color: white;
+	background: #266678;
+	color: #c7d7e5;
 }
 
 @keyframes animationFrames {
