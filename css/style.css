@@ -40,7 +40,8 @@ body {
 }
 
 body, a, span {
-	color: text-color 50s linear infinite;
+	-webkit-animation: text-color 50s linear infinite;
+	-moz-animation: text-color 50s linear infinite;
 }
 
 *,
