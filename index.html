@@ -21,22 +21,6 @@
 	</script> -->
 	<link data-fontset-id="ce-fontset" href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
-
-	<script>
-		(function() {
-			var message = $(".message");
-			var messageIndex = -1;
-			function showNextMessage() {
-			++messageIndex;
-			message.eq(messageIndex % message.length)
-					.fadeIn(400)
-					.delay(4000)
-					.fadeOut(400, showNextMessage);
-			}
-			showNextMessage();
-		})();
-	</script>
-
 </head>
 	<body>
 		<div class="wrapper">
@@ -61,5 +45,19 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			(function() {
+				var message = $(".message");
+				var messageIndex = -1;
+				function showNextMessage() {
+				++messageIndex;
+				message.eq(messageIndex % message.length)
+						.fadeIn(400)
+						.delay(4000)
+						.fadeOut(400, showNextMessage);
+				}
+				showNextMessage();
+			})();
+		</script>
 	</body>
 </html>
