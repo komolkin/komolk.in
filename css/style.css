@@ -56,9 +56,9 @@ a {
 	text-decoration: none;
 	font-weight: 700;
 	opacity: 1;
-	-webkit-transition: all 0.5s ease both;
-	-moz-transition: all 0.5s ease both;
-	-o-transition: all 0.5s ease both;
+	-webkit-transition: -webkit-all .3s ease;
+	-moz-transition: -moz-all .3s ease;
+	transition: all .3s ease;
 }
 
 a:hover {
