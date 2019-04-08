@@ -2,9 +2,7 @@ var classes = [
     '☻',
     'Hi',
     'I\'m Ilya',
-    'Product Designer',
-    'addicted to simplicity',
-    'and aesthetic'
+    'Product Designer'
 ];
 
 (function displayClass(i) {
