@@ -78,6 +78,7 @@ a {
 
 a:hover {
 	text-decoration: none;
+	opacity: .6;
 }
 
 .wrapper {
