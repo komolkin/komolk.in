@@ -127,7 +127,9 @@ a:hover {
 }
 
 h3 {
-	font-size: 1.6em;
+	font-size: 1.2em;
+	text-transform: capitalize;
+	/* font-size: 1.6em; */
 	font-weight: 700;
 }
 
