@@ -1,6 +1,6 @@
 var classes = [
     'Hi,',
-    '☻'
+    '👋🏻'
 ];
 
 (function displayClass(i) {
