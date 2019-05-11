@@ -9,11 +9,26 @@ canvasTag.style.height = window.innerHeight + 'px'
 const context = canvasTag.getContext('2d')
 context.scale(2, 2)
 
-const image = document.createElement('img')
-image.src = '../images/image1.jpg'
+let i = 0
+
+const images = ['image1.jpg', 'image2.jpg'].map(src => {
+    const image = document.createElement('img')
+    image.src = src
+    return image
+})
+
+// const image = document.createElement('img')
+// image.src = '../images/image1.jpg'
 
 document.addEventListener('mousemove', function () {
-    if (image.complete) {
-        context.drawImage(image, event.pageX - 240, event.pageY - 300, 480, 600)
+    if (images[i].complete) {
+        context.drawImage(images[i], event.pageX - 240, event.pageY - 300, 480, 600)
+    }
+})
+
+canvasTag.addEventListener('click', function () {
+    i = i + 1
+    if (i >= images.length) {
+        i = 0
     }
 })
