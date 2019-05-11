@@ -66,6 +66,12 @@ html {
 	-moz-animation: bg-color 50s linear infinite; */
 	background: black;
 	padding: 0;
+	margin: 0;
+}
+
+canvas {
+	padding: 0;
+	margin: 0;
 }
 
 body {
