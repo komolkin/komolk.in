@@ -14,6 +14,6 @@ image.src = '../images/image1.jpg'
 
 document.addEventListener('mousemove', function () {
     if (image.complete) {
-        context.drawImage(image, event.pageX, event.pageY, 600, 480)
+        context.drawImage(image, event.pageX, event.pageY, 480, 600)
     }
 })
