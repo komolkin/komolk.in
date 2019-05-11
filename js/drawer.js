@@ -1,7 +1,7 @@
 const canvasTag = document.querySelector('canvas')
 
-canvasTag.width = window.innerWidth = 2
-canvasTag.height = window.innerHeight = 2
+canvasTag.width = window.innerWidth * 2
+canvasTag.height = window.innerHeight * 2
 
 canvasTag.style.width = window.innerWidth + 'px'
 canvasTag.style.height = window.innerHeight + 'px'
