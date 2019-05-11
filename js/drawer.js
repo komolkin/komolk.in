@@ -11,7 +11,7 @@ context.scale(2, 2)
 
 let i = 0
 
-const images = ['image1.jpg', 'image2.jpg'].map(src => {
+const images = ['../images/image1.jpg', '../images/image2.jpg'].map(src => {
     const image = document.createElement('img')
     image.src = src
     return image
