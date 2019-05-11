@@ -115,6 +115,10 @@ a:hover {
 	opacity: .8;
 }
 
+p {
+	margin-bottom: 16px;
+}
+
 .wrapper {
 	position: absolute;
 	top: 0;
