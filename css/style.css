@@ -71,6 +71,7 @@ html {
 
 canvas {
 	position: absolute;
+	opacity: .8;
 }
 
 body {
