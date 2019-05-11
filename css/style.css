@@ -18,7 +18,7 @@
 	font-weight: 700;
 }
 
-@keyframes bg-color {
+/* @keyframes bg-color {
 	0% { background:#c7d7e5 }
 	40% { background:#f6dec6 }
 	80% { background:#ebc7cb }
@@ -37,9 +37,9 @@
 	40% { background:#f6dec6 }
 	80% { background:#ebc7cb }
 	100% { background:#c7d7e5 }
-}
+} */
 
-@keyframes text-color {
+/* @keyframes text-color {
 	0% { color:#266678 }
 	40% { color:#ac8649 }
 	80% { color:#ba746f }
@@ -58,13 +58,13 @@
 	40% { color:#ac8649 }
 	80% { color:#ba746f }
 	100% { color:#266678 }
-}
+} */
 
 html {
-	animation: bg-color 50s linear infinite;
+	/* animation: bg-color 50s linear infinite;
 	-webkit-animation: bg-color 50s linear infinite;
-	-moz-animation: bg-color 50s linear infinite;
-	margin: 0;
+	-moz-animation: bg-color 50s linear infinite; */
+	background: black;
 	padding: 0;
 }
 
@@ -75,9 +75,10 @@ body {
 }
 
 body, a {
-	animation: text-color 50s linear infinite;
+	/* animation: text-color 50s linear infinite;
 	-webkit-animation: text-color 50s linear infinite;
-	-moz-animation: text-color 50s linear infinite;
+	-moz-animation: text-color 50s linear infinite; */
+	color: white;
 }
 
 *,
