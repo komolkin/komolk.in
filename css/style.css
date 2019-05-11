@@ -64,6 +64,8 @@ html {
 	animation: bg-color 50s linear infinite;
 	-webkit-animation: bg-color 50s linear infinite;
 	-moz-animation: bg-color 50s linear infinite;
+	margin: 0;
+	padding: 0;
 }
 
 body {
