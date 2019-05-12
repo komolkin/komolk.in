@@ -115,7 +115,7 @@ a:hover {
 	opacity: .8;
 }
 
-a:hover canvas {
+a:hover .canvas {
 	opacity: .2;
 }
 
