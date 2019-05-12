@@ -142,16 +142,11 @@ p {
 .container {
 	display: table-cell;
 	vertical-align: middle;
-	pointer-events: none;
 }
 
 .about {
 	width: 680px;
 	margin: 0 auto;
-}
-
-.about p {
-	pointer-events: auto;
 }
 
 h3 {
