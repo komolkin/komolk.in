@@ -142,6 +142,7 @@ p {
 .container {
 	display: table-cell;
 	vertical-align: middle;
+	pointer-events: none;
 }
 
 .about {
