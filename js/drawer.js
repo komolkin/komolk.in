@@ -17,7 +17,7 @@ let currentY = null
 
 let i = 0
 
-const images = ['../images/image1.jpg', '../images/image2.jpg'].map(src => {
+const images = ['../images/image1.jpg', '../images/image2.jpg', '../images/image3.jpg', '../images/image4.jpg', '../images/image5.jpg'].map(src => {
     const image = document.createElement('img')
     image.src = src
     return image
@@ -30,9 +30,6 @@ document.addEventListener('mousemove', function () {
         currentX = event.pageX
         currentY = event.pageY
     }
-    // if (images[i].complete) {
-    //     context.drawImage(images[i], event.pageX - 240, event.pageY - 300, 480, 600)
-    // }
 })
 
 canvasTag.addEventListener('click', function () {
@@ -45,7 +42,7 @@ canvasTag.addEventListener('click', function () {
 const draw = function () {
     if (currentX) {
         if (images[i].complete) {
-            context.drawImage(images[i], currentX - 225, currentY - 300, 450, 600)
+            context.drawImage(images[i], currentX - 40, currentY - 40, 80, 80)
         }
         currentX = currentX + (aimX - currentX) * 0.1
         currentY = currentY + (aimY - currentY) * 0.1
