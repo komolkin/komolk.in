@@ -108,6 +108,7 @@ a {
 	-webkit-transition: -webkit-all .3s ease;
 	-moz-transition: -moz-all .3s ease;
 	transition: all .3s ease;
+	pointer-events: auto !important;
 }
 
 a:hover {
