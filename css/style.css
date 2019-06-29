@@ -91,7 +91,7 @@ body, a {
 	/* animation: text-color 50s linear infinite;
 	-webkit-animation: text-color 50s linear infinite;
 	-moz-animation: text-color 50s linear infinite; */
-	color: white;
+	color: rgba(255, 255, 255, .9)
 }
 
 *,
