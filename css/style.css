@@ -109,7 +109,7 @@ a {
 	transition: all .3s ease;
 	pointer-events: auto !important;
 
-	padding-bottom: 3px;
+	padding-bottom: 1px;
 	border-bottom: 2px solid rgba(255, 255, 255, .4);
 }
 
