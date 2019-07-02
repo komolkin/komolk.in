@@ -91,7 +91,9 @@ body, a {
 	/* animation: text-color 50s linear infinite;
 	-webkit-animation: text-color 50s linear infinite;
 	-moz-animation: text-color 50s linear infinite; */
-	color: rgba(255, 255, 255, .9)
+	color: rgba(255, 255, 255, .9);
+	padding-bottom: 4px;
+	border-bottom: 2px solid rgba(255, 255, 255, .4);
 }
 
 *,
