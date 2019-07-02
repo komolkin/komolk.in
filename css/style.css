@@ -110,11 +110,11 @@ a {
 	pointer-events: auto !important;
 
 	padding-bottom: 1px;
-	border-bottom: 2px solid rgba(255, 255, 255, .3);
+	border-bottom: 2px solid rgba(255, 255, 255, .2);
 }
 
 a:hover {
-	border-bottom: 2px solid rgba(255, 255, 255, .6);
+	border-bottom: 2px solid rgba(255, 255, 255, .3);
 }
 
 a:hover .canvas {

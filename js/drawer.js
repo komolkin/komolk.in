@@ -17,7 +17,7 @@ let currentY = null
 
 let i = 0
 
-const images = ['../images/image1.png', '../images/image2.png', '../images/image3.png', '../images/image4.png', '../images/image5.png'].map(src => {
+const images = ['../images/image1.png'].map(src => {
     const image = document.createElement('img')
     image.src = src
     return image
