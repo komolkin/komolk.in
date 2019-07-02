@@ -92,8 +92,6 @@ body, a {
 	-webkit-animation: text-color 50s linear infinite;
 	-moz-animation: text-color 50s linear infinite; */
 	color: rgba(255, 255, 255, .9);
-	padding-bottom: 2px;
-	border-bottom: 2px solid rgba(255, 255, 255, .4);
 }
 
 *,
@@ -105,12 +103,14 @@ body, a {
 }
 
 a {
-	font-weight: 700;
 	text-decoration: none;
 	-webkit-transition: -webkit-all .3s ease;
 	-moz-transition: -moz-all .3s ease;
 	transition: all .3s ease;
 	pointer-events: auto !important;
+
+	padding-bottom: 3px;
+	border-bottom: 2px solid rgba(255, 255, 255, .4);
 }
 
 a:hover {
