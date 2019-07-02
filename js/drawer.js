@@ -42,7 +42,7 @@ canvasTag.addEventListener('click', function () {
 const draw = function () {
     if (currentX) {
         if (images[i].complete) {
-            context.drawImage(images[i], currentX - 40, currentY - 40, 80, 80)
+            context.drawImage(images[i], currentX - 4, currentY - 4, 8, 8)
         }
         currentX = currentX + (aimX - currentX) * 0.1
         currentY = currentY + (aimY - currentY) * 0.1
