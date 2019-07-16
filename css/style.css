@@ -114,8 +114,7 @@ a {
 }
 
 a:hover {
-	border-bottom: 4px solid rgba(255, 255, 255, .3);
-	padding-bottom: -1px;
+	border-bottom: 2px solid rgba(255, 255, 255, .3);
 }
 
 a:hover .canvas {
