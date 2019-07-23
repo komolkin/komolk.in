@@ -1,21 +1,9 @@
 @import url("animation.css");
 
 @font-face {
-	font-family: "SuisseIntl";
-	src: url("../fonts/SuisseIntl-Regular-WebS.woff") format("woff");
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: "SuisseIntl";
-	src: url("../fonts/SuisseIntl-Medium-WebS.woff") format("woff");
+	font-family: "Manrope";
+	src: url("../fonts/manrope-medium.woff") format("woff");
 	font-weight: 600;
-}
-
-@font-face {
-	font-family: "SuisseIntl";
-	src: url("../fonts/SuisseIntl-SemiBold-WebS.woff") format("woff");
-	font-weight: 700;
 }
 
 /* @keyframes bg-color {
@@ -81,10 +69,10 @@ canvas {
 }
 
 body {
-	font-family: SuisseIntl, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-size: 2em;
-	line-height: 1.4;
+	font-size: 1.8em;
+	line-height: 1.6;
 }
 
 body, a {
