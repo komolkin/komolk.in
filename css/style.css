@@ -132,6 +132,7 @@ p {
 .container {
 	display: table-cell;
 	vertical-align: middle;
+	padding: 40px 0;
 }
 
 .about {
