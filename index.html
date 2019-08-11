@@ -10,15 +10,21 @@
 	.model {
 		width: 300px;
 		height: 300px;
-		transform: translateZ(-200px) rotateY(45deg);
-		/* animation: 5s spin linear infinite; */
+		animation: 5s spin linear infinite;
+		/* transform: rotateY(-35deg) rotateX(90deg); */
 	}
 	
-	/* @keyframes spin {
-		to {
-		transform: rotateX(1turn);
+	@keyframes spin {
+		0% {
+			transform: rotateY(-35deg);
 		}
-	} */
+		50% {
+			transform: rotateY(-15deg);
+		}
+		100% {
+			transform: rotateY(-35deg);
+		}
+	}
 	</style>
 </head>
 <body>
