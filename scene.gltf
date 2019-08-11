@@ -6,8 +6,7 @@
   "scenes": [
     {
       "nodes": [
-        1,
-        2
+        1
       ],
       "name": "Scene"
     }
@@ -41,32 +40,6 @@
       "children": [
         0
       ]
-    },
-    {
-      "matrix": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        201.40631467975646,
-        435.0071963555199,
-        1
-      ],
-      "name": "PointLight",
-      "extensions": {
-        "KHR_lights_punctual": {
-          "light": 0
-        }
-      }
     }
   ],
   "bufferViews": [
@@ -148,24 +121,5 @@
         }
       ]
     }
-  ],
-  "extensions": {
-    "KHR_lights_punctual": {
-      "lights": [
-        {
-          "name": "PointLight",
-          "color": [
-            1,
-            1,
-            1
-          ],
-          "intensity": 100,
-          "type": "point"
-        }
-      ]
-    }
-  },
-  "extensionsUsed": [
-    "KHR_lights_punctual"
   ]
 }
