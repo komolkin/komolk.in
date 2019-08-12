@@ -2,8 +2,8 @@
 
 @font-face {
 	font-family: "Manrope";
-	src: url("../fonts/manrope-medium.woff") format("woff");
-	font-weight: 600;
+	src: url("../fonts/manrope-bold.woff") format("woff");
+	font-weight: 800;
 }
 
 html {
