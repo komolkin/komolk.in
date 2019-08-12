@@ -6,6 +6,12 @@
 	font-weight: 800;
 }
 
+@font-face {
+	font-family: "Manrope";
+	src: url("../fonts/manrope-medium.woff") format("woff");
+	font-weight: 600;
+}
+
 html {
 	background: #121212;
 	padding: 0;
@@ -62,6 +68,7 @@ a:hover .canvas {
 
 p {
 	margin-bottom: 16px;
+	font-weight: 600;
 }
 
 .wrapper {
