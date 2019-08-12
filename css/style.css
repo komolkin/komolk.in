@@ -57,15 +57,12 @@ html {
 	margin: 0;
 }
 
-canvas {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	opacity: .8;
+.head {
+    top: 50% !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%,-50%) !important;
+    -ms-transform: translate(-50%,-50%) !important;
+    transform: translate(-50%,-50%) !important;
 }
 
 body {
