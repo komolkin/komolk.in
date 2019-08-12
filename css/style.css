@@ -35,9 +35,9 @@ body {
 	line-height: 1.6;
 }
 
-/* body, a {
-	color: rgba(255, 255, 255, .9);
-} */
+body, a {
+	color: rgb(255, 255, 255);
+}
 
 *,
 *:after,
