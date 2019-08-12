@@ -96,6 +96,10 @@ h1 {
 	line-height: 1.4
 }
 
+.description {
+	padding-left: 400px;
+}
+
 ::selection {
 	background: rgba(0, 0, 0, .2);
 	color: rgba(255, 255, 255, .6);
@@ -112,5 +116,8 @@ h1 {
 	.about {
 		width: 100%;
 		padding: 0 24px;
+	}
+	.description {
+		padding-left: 0;
 	}
 }
