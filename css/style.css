@@ -112,7 +112,7 @@ h1 {
 
 @media screen and (max-width: 500px) {
 	body {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 	.about {
 		width: 100%;
