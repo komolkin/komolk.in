@@ -78,11 +78,11 @@ p {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 80%;
+	height: 100%;
 	font-size: 100%;
 	display: table;
 	vertical-align: middle;
-	margin: 20% 0 0;
+	margin: 0;
 	padding: 0;
 	table-layout: fixed;
 }
@@ -127,5 +127,9 @@ h1 {
 	}
 	.description {
 		padding-left: 0;
+	}
+	.wrapper {
+		height: 80%;
+		margin: 20% 0 0;
 	}
 }
