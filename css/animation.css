@@ -82,64 +82,6 @@
 /* Delays */
 
 
-@keyframes "logoFloat" {
-	50% {
-		-webkit-transform: translate(0, 10px);
-		-moz-transform: translate(0, 10px);
-		-o-transform: translate(0, 10px);
-		-ms-transform: translate(0, 10px);
-		transform: translate(0, 10px);
-	}
-	100% {
-		-webkit-transform: translate(0, 0);
-		-moz-transform: translate(0, 0);
-		-o-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		transform: translate(0, 0);
-	}
-}
-@-moz-keyframes "logoFloat" {
-	50% {
-		-moz-transform: translate(0, 10px);
-		transform: translate(0, 10px);
-	}
-	100% {
-		-moz-transform: translate(0, 0);
-		transform: translate(0, 0);
-	}
-}
-@-webkit-keyframes "logoFloat" {
-	50% {
-		-webkit-transform: translate(0, 10px);
-		transform: translate(0, 10px);
-	}
-	100% {
-		-webkit-transform: translate(0, 0);
-		transform: translate(0, 0);
-	}
-}
-@-ms-keyframes "logoFloat" {
-	50% {
-		-ms-transform: translate(0, 10px);
-		transform: translate(0, 10px);
-	}
-	100% {
-		-ms-transform: translate(0, 0);
-		transform: translate(0, 0);
-	}
-}
-@-o-keyframes "logoFloat" {
-	50% {
-		-o-transform: translate(0, 10px);
-		transform: translate(0, 10px);
-	}
-	100% {
-		-o-transform: translate(0, 0);
-		transform: translate(0, 0);
-	}
-}
-
-
 /* Fade In */
 @-webkit-keyframes fadeIn {
 	0% {opacity: 0;}	
