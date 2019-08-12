@@ -58,6 +58,7 @@ html {
 }
 
 .head {
+	position: fixed;
 	pointer-events: none !important;
     top: 50% !important;
     left: 50% !important;
