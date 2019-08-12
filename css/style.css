@@ -92,8 +92,8 @@ p {
 }
 
 h1 {
-	margin-bottom: -16px;
-	line-height: 1.2
+	margin-bottom: auto;
+	line-height: 1.4
 }
 
 ::selection {
