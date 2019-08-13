@@ -13,7 +13,8 @@
 }
 
 html {
-	background: rgb(0, 1, 7);
+	/* background: rgb(0, 1, 7); */
+	background: #111111;
 	padding: 0;
 	margin: 0;
 }
