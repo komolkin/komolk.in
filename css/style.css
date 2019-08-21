@@ -63,11 +63,12 @@ a {
 	-moz-transition: -moz-all .3s ease;
 	transition: all .3s ease;
 	pointer-events: auto !important;
-	/* border-bottom: 2px solid rgba(255, 255, 255, .2); */
+	border-bottom: 2px solid rgba(255, 255, 255, .2);
 }
 
 a:hover {
 	border-bottom: 2px solid rgba(255, 255, 255, .3);
+	border-width: 0;
 }
 
 a:hover .canvas {
