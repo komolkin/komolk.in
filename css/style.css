@@ -68,7 +68,6 @@ a {
 
 a:hover {
 	border-bottom: 2px solid rgba(255, 255, 255, .3);
-	border-width: 0;
 }
 
 a:hover .canvas {
