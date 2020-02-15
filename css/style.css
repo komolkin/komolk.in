@@ -1,154 +1,157 @@
 @import url("animation.css");
 
 @font-face {
-	font-family: "Manrope";
-	src: url("../fonts/manrope-bold.woff") format("woff");
-	font-weight: 800;
+  font-family: "Manrope";
+  src: url("../fonts/manrope-bold.woff") format("woff");
+  font-weight: 800;
 }
 
 @font-face {
-	font-family: "Manrope";
-	src: url("../fonts/manrope-medium.woff") format("woff");
-	font-weight: 600;
+  font-family: "Manrope";
+  src: url("../fonts/manrope-medium.woff") format("woff");
+  font-weight: 600;
 }
 
 html {
-	/* background: rgb(0, 1, 7); */
-	background: #0C0F1D;
-	padding: 0;
-	margin: 0;
+  /* background: rgb(0, 1, 7); */
+  background: #0c0f1d;
+  padding: 0;
+  margin: 0;
 }
 
 .head {
-	position: fixed;
-	/* pointer-events: none !important; */
-    top: 50% !important;
-    left: 50% !important;
-    -webkit-transform: translate(-50%,-50%) !important;
-    -ms-transform: translate(-50%,-50%) !important;
-    transform: translate(-50%,-50%) !important;
+  position: fixed;
+  /* pointer-events: none !important; */
+  top: 50% !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
 }
 
 .square {
-	width: 200px;
-	height: 200px;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	z-index: 99999999;
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99999999;
 }
 
 body {
-	font-family: Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	font-size: 1.4em;
-	line-height: 1.6;
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.4em;
+  line-height: 1.6;
 }
 
-body, a {
-	color: rgb(255, 255, 255);
+body,
+a {
+  color: rgb(255, 255, 255);
 }
 
 *,
 *:after,
 *::before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-	text-decoration: none;
-	-webkit-transition: -webkit-all .3s ease;
-	-moz-transition: -moz-all .3s ease;
-	transition: all .3s ease;
-	pointer-events: auto !important;
-	/* border-bottom: 2px solid rgba(255, 255, 255, .2); */
+  text-decoration: none;
+  -webkit-transition: -webkit-all 0.3s ease;
+  -moz-transition: -moz-all 0.3s ease;
+  transition: all 0.3s ease;
+  pointer-events: auto !important;
+  /* border-bottom: 2px solid rgba(255, 255, 255, .2); */
 }
 
 a:after {
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 2px;
-	background: rgba(255, 255, 255, .2);
-	left: 0;
-	bottom: 0;
-	transition: width 300ms ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  left: 0;
+  bottom: 0;
+  transition: width 300ms ease;
 }
 
 a:hover {
-	/* border-bottom: 2px solid rgba(255, 255, 255, .3); */
+  /* border-bottom: 2px solid rgba(255, 255, 255, .3); */
 }
 
 a:hover .canvas {
-	opacity: .2;
+  opacity: 0.2;
 }
 
 p {
-	margin-bottom: 16px;
-	font-weight: 600;
+  margin-bottom: 16px;
+  font-weight: 600;
 }
 
 .wrapper {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	font-size: 100%;
-	display: table;
-	vertical-align: middle;
-	margin: 0;
-	padding: 0;
-	table-layout: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  display: table;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
 }
 
 .container {
-	display: table-cell;
-	vertical-align: middle;
-	padding: 40px 0;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 40px 0;
 }
 
 .about {
-	width: 800px;
-	margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
 }
 
 h1 {
-	margin-bottom: auto;
-	line-height: 1.4
+  margin-bottom: auto;
+  line-height: 1.4;
 }
 
 .description {
-	width: 100%;
-	padding-left: 400px;
+  width: 100%;
+  /* padding-left: 400px; */
 }
 
 ::selection {
-	background: rgba(0, 0, 0, .2);
-	color: rgba(255, 255, 255, .6);
+  background: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 @media screen and (max-width: 500px) {
-	body {
-		font-size: 1em;
-	}
-	.about {
-		width: 100%;
-		padding: 0 40px;
-	}
-	.description {
-		padding-left: 0;
-	}
-	.wrapper {
-		height: 80%;
-		margin: 20% 0 0;
-	}
+  body {
+    font-size: 1em;
+  }
+  .about {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .description {
+    padding-left: 0;
+  }
+  .wrapper {
+    height: 80%;
+    margin: 20% 0 0;
+  }
 }
