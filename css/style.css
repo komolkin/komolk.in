@@ -99,6 +99,7 @@ h1 {
 }
 
 .description {
+  width: 25%;
   padding: 40px;
   opacity: 0.4;
 
