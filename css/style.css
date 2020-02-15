@@ -102,6 +102,14 @@ h1 {
   width: 100%;
   padding: 40px;
   opacity: 0.4;
+
+  -webkit-transition: -webkit-all 0.3s ease;
+  -moz-transition: -moz-all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.description:hover {
+  opacity: 1;
 }
 
 ::selection {
@@ -119,5 +127,6 @@ h1 {
   }
   .description {
     padding: 24px;
+    opacity: 1;
   }
 }
