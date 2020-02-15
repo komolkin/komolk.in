@@ -128,7 +128,6 @@ h1 {
 .description {
   width: 100%;
   padding: 40px;
-  /* padding-left: 400px; */
 }
 
 ::selection {
@@ -144,15 +143,7 @@ h1 {
   body {
     font-size: 1em;
   }
-  .about {
-    width: 100%;
-    padding: 0 40px;
-  }
   .description {
-    padding-left: 0;
-  }
-  .wrapper {
-    height: 80%;
-    margin: 20% 0 0;
+    padding: 24px;
   }
 }
