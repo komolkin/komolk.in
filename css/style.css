@@ -55,6 +55,7 @@ a {
   -moz-transition: -moz-all 0.2s ease;
   transition: all 0.2s ease;
   pointer-events: auto !important;
+  font-weight: 600;
 }
 
 .description {
