@@ -8,12 +8,12 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("../fonts/manrope-medium.woff") format("woff");
+  src: url("../fonts/manrope-med#090b16ium.woff") format("woff");
   font-weight: 600;
 }
 
 html {
-  background: #0c0f1d;
+  background: #090b16;
   padding: 0;
   margin: 0;
 }
