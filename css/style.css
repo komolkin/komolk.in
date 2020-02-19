@@ -70,7 +70,8 @@ h1 {
 }
 
 .description {
-  width: 30%;
+  position: fixed;
+  width: auto;
   padding: 40px;
 }
 
