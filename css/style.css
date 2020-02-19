@@ -51,9 +51,9 @@ a {
 
 a {
   text-decoration: none;
-  -webkit-transition: -webkit-all 0.2s ease;
-  -moz-transition: -moz-all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: -webkit-all 0.3s ease;
+  -moz-transition: -moz-all 0.3s ease;
+  transition: all 0.3s ease;
   pointer-events: auto !important;
   font-weight: 600;
 }
@@ -77,7 +77,7 @@ nav a span {
 }
 
 nav:hover a {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 nav a:hover {
