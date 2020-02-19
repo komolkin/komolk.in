@@ -72,6 +72,10 @@ nav a {
   opacity: 0.8;
 }
 
+nav a span {
+  opacity: 0.4 !important;
+}
+
 nav:hover a {
   opacity: 0.3;
 }
