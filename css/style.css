@@ -99,7 +99,7 @@ h1 {
 }
 
 .description {
-  width: 33%;
+  width: auto;
   padding: 40px;
 }
 
