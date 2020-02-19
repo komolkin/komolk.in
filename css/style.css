@@ -65,6 +65,7 @@ a {
 
 nav {
   margin: auto;
+  font-weight: 600;
 }
 
 nav a {
@@ -77,10 +78,6 @@ nav:hover a {
 
 nav a:hover {
   opacity: 1;
-}
-
-span {
-  font-weight: 600;
 }
 
 ::selection {
