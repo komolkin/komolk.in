@@ -59,18 +59,12 @@ a {
 
 .description {
   position: fixed;
-  width: auto;
   padding: 40px;
-}
-
-nav {
-  margin: auto;
 }
 
 nav a {
   display: block;
   opacity: 0.8;
-  margin-bottom: 8px;
 }
 
 nav:hover a {
