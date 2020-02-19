@@ -13,7 +13,11 @@
 }
 
 html {
-  background: #0c0f1d;
+  background: linear-gradient(
+    0deg,
+    rgba(36, 46, 91, 1) 0%,
+    rgba(12, 15, 29, 1) 100%
+  );
   padding: 0;
   margin: 0;
 }
