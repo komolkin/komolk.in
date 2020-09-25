@@ -67,6 +67,10 @@ a {
   font-weight: 800;
 }
 
+nav {
+  margin-top: -16px;
+}
+
 nav a {
   display: block;
   opacity: 0.8;
