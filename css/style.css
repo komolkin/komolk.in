@@ -106,5 +106,6 @@ nav a:hover {
     padding: 24px;
     position: fixed;
     bottom: 32px;
+    font-size: 1.3em;
   }
 }
