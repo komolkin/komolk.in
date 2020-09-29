@@ -99,13 +99,12 @@ nav a:hover {
 
 @media screen and (max-width: 500px) {
   body {
-    font-size: 1em;
+    font-size: .8em;
   }
   .description {
     width: 100%;
     padding: 24px;
     position: fixed;
     bottom: 32px;
-    font-size: 1.3em;
   }
 }
