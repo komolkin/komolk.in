@@ -13,8 +13,8 @@
 }
 
 html {
-  /* background: #090b16; */
-  background: linear-gradient(180deg, #525669 0%, #535E77 12.5%, #5D7798 41.15%, #8A8CA9 72.4%, #F1A7B1 100%) fixed;
+  background: #090b16;
+  /* background: linear-gradient(180deg, #525669 0%, #535E77 12.5%, #5D7798 41.15%, #8A8CA9 72.4%, #F1A7B1 100%) fixed; */
   padding: 0;
   margin: 0;
 }
