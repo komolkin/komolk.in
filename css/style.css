@@ -19,6 +19,12 @@ html {
   margin: 0;
 }
 
+sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 80%; }
+}
+
 .head {
   position: fixed;
   top: 50% !important;
