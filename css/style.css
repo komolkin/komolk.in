@@ -91,6 +91,10 @@ nav a:hover {
   opacity: 0.8;
 }
 
+sup {
+  font-size: .4em;
+}
+
 ::selection {
   background: rgba(0, 0, 0, 0.2);
   color: rgba(255, 255, 255, 0.6);
