@@ -118,7 +118,9 @@ form {
   right: 48px;
   max-width: var(--form-width);
 
-  background: var(--form-back);
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
   color: var(--form-fore);
   padding: 24px;
   border-radius: 16px;
