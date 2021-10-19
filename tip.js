@@ -1,7 +1,7 @@
 const form = document.querySelector("form")
 
 const send = function (color) {
-    form.style.background = "red"
+    form.style.background = color
 }
 
 form.addEventListener("submit", function (event) {
