@@ -7,7 +7,8 @@ const send = function (amount) {
 form.addEventListener("submit", function (event) {
     event.preventDefault()
     if (window.ethereum) {
-        send("0.01")
+        const input = form.querySelector("input")
+        send(input.value)
     } else {
         alert("Please install an Ethereum wallet")
     }
