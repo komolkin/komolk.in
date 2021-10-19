@@ -12,6 +12,21 @@
   font-weight: 600;
 }
 
+:root {
+  --page-back: #ffffff;
+  --page-fore: #111118;
+  --page-font-size: 24px;
+
+  --section-pad: 120px;
+  --section-border: #f8f8f8;
+  --section-height: 100vh;
+
+  --form-width: 240px;
+  --form-back: #111118;
+  --form-fore: #ffffff;
+  --form-border: #66666a;
+}
+
 html {
   background: #090b16;
   background: url("../images/background.png") no-repeat center center fixed;
@@ -97,6 +112,76 @@ nav a:hover {
 sup {
   font-size: .5em;
 }
+
+form {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  max-width: var(--form-width);
+
+  background: var(--form-back);
+  color: var(--form-fore);
+  padding: 24px;
+
+  display: grid;
+  grid-gap: 16px 8px;
+  grid-template-areas: "label label" "input eth" "button button";
+  grid-template-columns: 1fr auto;
+  align-items: center;
+
+  /* display: none; */
+  animation: fadein 0.4s 0.8s ease-in-out both;
+}
+
+form.has-eth { 
+  display: grid;
+  animation: fadein 0.4s 0.8s ease-in-out both;
+}
+
+form label {
+  grid-area: label;
+
+  display: block;
+  font-size: 16px;
+}
+
+form input {
+  grid-area: input;
+
+  appearance: none;
+  width: 100%;
+  border: none;
+  padding: 8px;
+
+  /* font-variation-settings: "wght" 600; */
+  text-align: right;
+
+  background: var(--form-back);
+  color: var(--form-fore);
+  border: 1px solid var(--form-border);
+  transition: border-color 0.2s ease-in-out;
+}
+
+form input:focus {
+  border: 1px solid var(--form-fore);
+  outline: none;
+}
+
+form span {
+  grid-area: eth;
+}
+
+form button {
+  grid-area: button;
+  appearance: none;
+  border: none;
+  background: var(--form-fore);
+  color: var(--form-back);
+  font: inherit;
+  padding: 8px;
+  font-size: 16px;
+}
+
 
 ::selection {
   background: rgba(0, 0, 0, 0.2);
