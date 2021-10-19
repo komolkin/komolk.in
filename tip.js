@@ -1,7 +1,7 @@
 const form = document.querySelector("form")
 
 const send = function (amount) {
-    alert("You are going to send " + amount + "ETH")
+    alert("You are going to send " + amount + " ETH")
 }
 
 form.addEventListener("submit", function (event) {
