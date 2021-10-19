@@ -1,6 +1,6 @@
 const form = document.querySelector("form")
 
-const send = function () {
+const send = function (color) {
     form.style.background = "red"
 }
 
