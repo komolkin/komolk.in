@@ -128,7 +128,7 @@ form {
   border-radius: 16px;
 
   display: grid;
-  grid-gap: 16px 12px;
+  grid-gap: 16px 0;
   grid-template-areas: "label label" "input eth" "button button";
   grid-template-columns: 1fr auto;
   align-items: center;
@@ -153,7 +153,7 @@ form input {
   width: 100%;
   border: none;
   border-radius: 8px;
-  padding: 12px;
+  padding: 12px 32px 12px 12px;
 
   /* font-variation-settings: "wght" 600; */
   text-align: left;
@@ -172,8 +172,15 @@ form input:focus {
   outline: none;
 }
 
-form span {
-  grid-area: eth;
+.input-symbol-eth {
+  position: relative;
+}
+
+.input-symbol-eth:after {
+  position: absolute;
+  top: 6px;
+  content:"Ξ";
+  right: 12px;
 }
 
 form button {
