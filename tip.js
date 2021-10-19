@@ -7,7 +7,7 @@ const send = function (color) {
 form.addEventListener("submit", function (event) {
     event.preventDefault()
     if (window.ethereum) {
-        send()
+        send("blue")
     } else {
         alert("Please install an Ethereum wallet")
     }
