@@ -2,5 +2,9 @@ const form = document.querySelector("form")
 
 form.addEventListener("submit", function (event) {
     event.preventDefault()
-    form.style.background = "red"
+    if (window.ethereum) {
+        form.style.background = "red"
+    } else {
+        alert("Please install an Ethereum wallet")
+    }
 })
