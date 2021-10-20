@@ -232,4 +232,8 @@ form button:active {
     position: fixed;
     top: 16px;
   }
+
+  form {
+    font-size: 15px;
+  }
 }
