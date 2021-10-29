@@ -6,7 +6,7 @@ const checkPrice = function () {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            priceTag.innerHTML = data.1.current_price.toFixed(1)
+            priceTag.innerHTML = data.1.current_price
         })
 }
 
