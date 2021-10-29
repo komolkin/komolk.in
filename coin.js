@@ -1,5 +1,5 @@
 const url = "https://api.coindesk.com/v1/bpi/currentprice.json"
-const priceTag = document.querySelector("h1")
+const priceTag = document.querySelector("h3")
 let currency = "USD"
 
 const checkPrice = function () {
