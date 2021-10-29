@@ -1,4 +1,4 @@
-const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd"
+const url = "https://api.coindesk.com/v1/bpi/currentprice.json"
 const priceTag = document.querySelector("h1")
 let currency = "USD"
 
@@ -6,7 +6,7 @@ const checkPrice = function () {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            priceTag.innerHTML = data.1.current_price
+            priceTag.innerHTML = data.bpi.USD.rate_float.toFixed(1)
         })
 }
 
