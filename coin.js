@@ -6,7 +6,7 @@ const checkPrice = function () {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            priceTag.innerHTML = data.ethereum.current_price.toFixed(1)
+            priceTag.innerHTML = data.bpi.USD.rate_float.toFixed(1)
         })
 }
 
