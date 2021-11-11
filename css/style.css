@@ -13,7 +13,7 @@
 }
 
 :root {
-  --page-back: #ffffff;
+  --page-back: #090b16;
   --page-fore: #111118;
   --page-font-size: 24px;
 
@@ -28,7 +28,7 @@
 }
 
 html {
-  background: #090b16;
+  background:var(--page-back);
   background: url("../images/background.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
