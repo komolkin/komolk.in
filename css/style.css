@@ -21,7 +21,7 @@
   --section-border: #f8f8f8;
   --section-height: 100vh;
 
-  --form-width: 240px;
+  --form-width: 248px;
   --form-back: #111118;
   --form-fore: #ffffff;
   --form-border: #66666a;
@@ -129,8 +129,8 @@ form {
   border-radius: 16px;
 
   display: grid;
-  grid-gap: 16px 0;
-  grid-template-areas: "label label" "input eth" "button button";
+  grid-gap: 16px 8px;
+  grid-template-areas: "label label" "input button";
   grid-template-columns: 1fr auto;
   align-items: center;
 }
@@ -154,16 +154,13 @@ form input {
   width: 100%;
   border: none;
   border-radius: 8px;
-  padding: 12px 32px 12px 12px;
+  padding: 12px;
 
   font-size: 15px;
-
-  /* font-variation-settings: "wght" 600; */
   text-align: left;
 
   background: rgba(255, 255, 255, 0.1);
   color: var(--form-fore);
-  /* border: 1px solid var(--form-border); */
   -webkit-transition: -webkit-all 0.3s ease;
   -moz-transition: -moz-all 0.3s ease;
   transition: all 0.3s ease;
@@ -171,7 +168,6 @@ form input {
 
 form input:focus {
   background: rgba(255, 255, 255, 0.15);
-  /* border: 1px solid var(--form-fore); */
   outline: none;
 }
 
@@ -179,22 +175,15 @@ form input:focus {
   position: relative;
 }
 
-/* .input-symbol-eth:after {
-  position: absolute;
-  top: 8px;
-  content:"Ξ";
-  right: 12px;
-} */
-
 form button {
   grid-area: button;
   appearance: none;
   border: none;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.15);
   color: var(--form-back);
   font: inherit;
-  padding: 8px;
+  padding: 8px 12px;
   font-weight: 600;
 
   -webkit-transition: -webkit-all 0.3s ease;
@@ -203,7 +192,7 @@ form button {
 }
 
 form button:hover {
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
