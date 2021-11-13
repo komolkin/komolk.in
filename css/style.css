@@ -156,6 +156,8 @@ form input {
   border-radius: 8px;
   padding: 12px 32px 12px 12px;
 
+  font-size: 15px;
+
   /* font-variation-settings: "wght" 600; */
   text-align: left;
 
@@ -177,12 +179,12 @@ form input:focus {
   position: relative;
 }
 
-.input-symbol-eth:after {
+/* .input-symbol-eth:after {
   position: absolute;
   top: 8px;
   content:"Ξ";
   right: 12px;
-}
+} */
 
 form button {
   grid-area: button;
@@ -208,7 +210,6 @@ form button:hover {
 form button:active {
   transform: scale(0.95);
 }
-
 
 ::selection {
   background: rgba(0, 0, 0, 0.2);
