@@ -230,5 +230,6 @@ form button:active {
 
   form {
     font-size: 15px;
+    visibility: hidden;
   }
 }
