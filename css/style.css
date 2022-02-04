@@ -28,7 +28,7 @@
 }
 
 html {
-  background:var(--page-back);
+  background: #090b16;
   background: url("../images/background.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
