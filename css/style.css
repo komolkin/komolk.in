@@ -37,6 +37,7 @@ html {
   /* background: linear-gradient(180deg, #525669 0%, #535E77 12.5%, #5D7798 41.15%, #8A8CA9 72.4%, #F1A7B1 100%) fixed; */
   padding: 0;
   margin: 0;
+  cursor: none;
 }
 
 .head {
@@ -46,6 +47,7 @@ html {
   -webkit-transform: translate(-50%, -50%) !important;
   -ms-transform: translate(-50%, -50%) !important;
   transform: translate(-50%, -50%) !important;
+  pointer-events: none;
 }
 
 body {
@@ -75,7 +77,7 @@ a {
   -webkit-transition: -webkit-all 0.3s ease;
   -moz-transition: -moz-all 0.3s ease;
   transition: all 0.3s ease;
-  pointer-events: auto !important;
+  /* pointer-events: auto !important; */
 }
 
 .description {
@@ -85,6 +87,10 @@ a {
 
 .description h3 {
   font-weight: 800;
+}
+
+a {
+  cursor: none;
 }
 
 nav {
@@ -193,7 +199,8 @@ form button {
 
 form button:hover {
   background: rgba(255, 255, 255, 1);
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: none;
 }
 
 form button:active {
@@ -202,6 +209,20 @@ form button:active {
 
 #stock-price-cents {
   opacity: .6;
+}
+
+div.cursors div {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 10000;
+  cursor: none;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
 }
 
 ::selection {
