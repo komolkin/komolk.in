@@ -212,16 +212,27 @@ form button:active {
 }
 
 div.cursors div {
-  position: absolute;
   top: 300px;
   left: 300px;
-  width: 8px;
-  height: 8px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
   background-color: #ffffff;
   border-radius: 50%;
   z-index: 10000;
   cursor: none;
   pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+div.cursors div span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #000000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
