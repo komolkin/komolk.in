@@ -116,7 +116,7 @@ nav a:hover {
 }
 
 sup {
-  font-size: .5em;
+  font-size: 0.5em;
 }
 
 form {
@@ -141,7 +141,7 @@ form {
   align-items: center;
 }
 
-form.has-eth { 
+form.has-eth {
   display: grid;
   animation: fadein 0.4s 0.8s ease-in-out both;
 }
@@ -208,7 +208,7 @@ form button:active {
 }
 
 #stock-price-cents {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 div.cursors div {
@@ -247,7 +247,7 @@ div.cursors div span {
 
 @media screen and (max-width: 500px) {
   body {
-    font-size: .8em;
+    font-size: 0.8em;
   }
   nav {
     margin-top: -8px;
