@@ -37,7 +37,7 @@ html {
   /* background: linear-gradient(180deg, #525669 0%, #535E77 12.5%, #5D7798 41.15%, #8A8CA9 72.4%, #F1A7B1 100%) fixed; */
   padding: 0;
   margin: 0;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .head {
@@ -90,7 +90,7 @@ a {
 }
 
 a {
-  cursor: none;
+  /* cursor: none; */
 }
 
 nav {
@@ -217,7 +217,7 @@ div.cursors div {
   position: absolute;
   width: 32px;
   height: 32px;
-  background-color: #ffffff;
+  border: 1px solid white;
   border-radius: 50%;
   z-index: 10000;
   cursor: none;
@@ -225,7 +225,7 @@ div.cursors div {
   transform: translate(-50%, -50%);
 }
 
-div.cursors div span {
+/* div.cursors div span {
   position: absolute;
   width: 4px;
   height: 4px;
@@ -234,7 +234,7 @@ div.cursors div span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 ::selection {
   background: rgba(0, 0, 0, 0.2);
