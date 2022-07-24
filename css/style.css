@@ -90,10 +90,6 @@ a {
   font-weight: 800;
 }
 
-a {
-  /* cursor: none; */
-}
-
 nav {
   margin-top: -16px;
 }
@@ -123,7 +119,7 @@ sup {
 .widgets {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 10px;
+  gap: 6px;
   position: fixed;
   bottom: 48px;
   right: 48px;
@@ -267,7 +263,8 @@ div.cursors div {
   transform: translate(-50%, -50%);
 } */
 
-section.times {
+section.times,
+.heart {
   font-size: 15px;
 
   background: rgba(255, 255, 255, 0.05);
@@ -279,6 +276,12 @@ section.times {
 }
 
 section.times div {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart div {
   padding: 12px 0;
   display: flex;
   justify-content: space-between;
@@ -300,6 +303,18 @@ section.times div:first-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* rate:before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+  vertical-align: 2px;
+  animation: heartbeat 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+} */
+
 ::selection {
   background: rgba(0, 0, 0, 0.2);
   color: rgba(255, 255, 255, 0.6);
@@ -318,6 +333,27 @@ section.times div:first-child {
   }
   100% {
     transform: scale(0.8);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
   }
 }
 

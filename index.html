@@ -58,7 +58,15 @@
 
       <div class="widgets">
         <div>
-          <section class="times animate fadeInUp queue6s">
+          <section class="heart animate fadeInUp queue4s">
+            <div>
+              <label>Heart Rate</label>
+              <value><span class="rate">68</span> BPM</value>
+            </div>
+          </section>
+        </div>
+        <div>
+          <section class="times animate fadeInUp queue5s">
             <div data-timezone="America/New_York">
               <label>Brooklyn</label>
               <output>00:00</output>
@@ -70,13 +78,13 @@
           </section>
         </div>
         <div>
-          <form action="" class="animate fadeInUp queue5s">
+          <form action="" class="animate fadeInUp queue6s">
             <div class="price" onclick="toggleDiv()">
               <label>Ethereum</label>
-              <output for=""
+              <output class="animate fadeIn queue30s" for=""
                 >$<span id="stock-price">0000</span
-                ><span id="stock-price-cents">.00</span></output
-              >
+                ><span id="stock-price-cents">.00</span>
+              </output>
             </div>
             <div id="send-eth">
               <input type="number" min="1" placeholder="Amount" autofocus />
@@ -96,5 +104,6 @@
     <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
     <script src="times.js"></script>
     <script src="accordion.js"></script>
+    <script src="rate.js"></script>
   </body>
 </html>
