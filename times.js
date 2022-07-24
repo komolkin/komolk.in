@@ -7,7 +7,7 @@ const updateTimes = function () {
 
     const now = luxon.DateTime.now().setZone(timezone);
 
-    output.innerHTML = now.toFormat("HH:mm");
+    output.innerHTML = now.toFormat("t");
   });
 };
 

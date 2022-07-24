@@ -65,18 +65,23 @@
             </div>
             <div data-timezone="Europe/Lisbon">
               <label>Lisbon</label>
-              <output>00:00</output>
+              <output>00:00 AM</output>
             </div>
           </section>
         </div>
         <div>
           <form action="" class="animate fadeInUp queue5s">
-            <label for=""
-              >1 ETH = $<span id="stock-price">0000</span
-              ><span id="stock-price-cents">.00</span></label
-            >
-            <input placeholder="Amount" autofocus />
-            <button>Send</button>
+            <div class="price" onclick="toggleDiv()">
+              <label>Ethereum</label>
+              <output for=""
+                >$<span id="stock-price">0000</span
+                ><span id="stock-price-cents">.00</span></output
+              >
+            </div>
+            <div id="send-eth">
+              <input type="number" min="1" placeholder="Amount" autofocus />
+              <button>Send</button>
+            </div>
           </form>
         </div>
       </div>
@@ -90,5 +95,6 @@
     <script src="cursors.js"></script>
     <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
     <script src="times.js"></script>
+    <script src="accordion.js"></script>
   </body>
 </html>
