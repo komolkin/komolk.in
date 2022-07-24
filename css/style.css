@@ -303,16 +303,16 @@ section.times div:first-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* rate:before {
+/* .rate:before {
   content: "";
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  background-color: rgba(255, 255, 255, .2);
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   margin: 0 10px 0 0;
   vertical-align: 2px;
-  animation: heartbeat 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  animation: heartbeat 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 } */
 
 ::selection {
