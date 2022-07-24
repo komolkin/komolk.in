@@ -127,7 +127,7 @@ sup {
   position: fixed;
   bottom: 48px;
   right: 48px;
-  min-width: 180px;
+  min-width: 200px;
   max-width: var(--form-width);
 }
 
