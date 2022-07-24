@@ -120,19 +120,24 @@ sup {
   font-size: 0.5em;
 }
 
-form {
+.widgets {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
   position: fixed;
   bottom: 48px;
   right: 48px;
   max-width: var(--form-width);
+}
 
+form {
   font-size: 15px;
 
   background: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(24px);
   backdrop-filter: blur(24px);
   color: var(--form-fore);
-  padding: 24px;
+  padding: 16px;
   border-radius: 16px;
 
   display: grid;
@@ -218,7 +223,7 @@ div.cursors div {
   position: absolute;
   width: 32px;
   height: 32px;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   mix-blend-mode: difference;
   border-radius: 50%;
   z-index: 10000;
@@ -237,6 +242,27 @@ div.cursors div {
   left: 50%;
   transform: translate(-50%, -50%);
 } */
+
+section.times {
+  font-size: 15px;
+
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  color: var(--form-fore);
+  padding: 0 16px 2px;
+  border-radius: 16px;
+}
+
+section.times div {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.times div:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 ::selection {
   background: rgba(0, 0, 0, 0.2);
