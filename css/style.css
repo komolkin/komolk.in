@@ -225,8 +225,8 @@ form button {
 
 form button:hover {
   background: rgba(255, 255, 255, 1);
-  /* cursor: pointer; */
-  cursor: none;
+  cursor: pointer;
+  /* cursor: none; */
 }
 
 form button:active {
