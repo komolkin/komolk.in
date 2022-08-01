@@ -252,11 +252,6 @@ form button:active {
   transform: translate(-50%, -50%);
 }
 
-nav:hover .circle {
-  width: 16px;
-  height: 16px;
-}
-
 /* div.cursors div span {
   position: absolute;
   width: 4px;
