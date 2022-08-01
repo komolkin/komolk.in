@@ -23,3 +23,16 @@ document.addEventListener("mousemove", function (event) {
   aimX = event.pageX;
   aimY = event.pageY;
 });
+
+$(document).ready(function () {
+  $("nav, form").mouseover(function () {
+    $(".circle").css({
+      width: "16px",
+      height: "16px",
+      transition: "width .4s ease, height .4s ease",
+    });
+  });
+  $("nav, form").mouseout(function () {
+    $(".circle").css({ width: "64px", height: "64px" });
+  });
+});
