@@ -169,6 +169,10 @@ form.has-eth {
   justify-content: space-between;
 }
 
+label {
+  opacity: 0.6;
+}
+
 .price label {
   cursor: pointer;
 }
