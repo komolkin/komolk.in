@@ -91,7 +91,7 @@ a {
   font-weight: 800;
 }
 
-.description h3:after {
+/* .description h3:after {
   content: "BETA";
   font-size: 12px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -99,7 +99,7 @@ a {
   padding: 4px 10px;
   position: absolute;
   margin: 8px 10px;
-}
+} */
 
 nav {
   margin-top: -16px;
