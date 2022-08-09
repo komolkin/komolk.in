@@ -48,7 +48,7 @@ html {
   -webkit-transform: translate(-50%, -50%) !important;
   -ms-transform: translate(-50%, -50%) !important;
   transform: translate(-50%, -50%) !important;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 body {
@@ -89,6 +89,15 @@ a {
 .description h3 {
   margin-top: 0;
   font-weight: 800;
+}
+
+.description h3:after {
+  content: "BETA";
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 8px;
 }
 
 nav {
@@ -242,7 +251,7 @@ form button:active {
   opacity: 0.6;
 }
 
-.circle {
+/* .circle {
   top: 300px;
   left: 300px;
   position: absolute;
@@ -255,7 +264,7 @@ form button:active {
   cursor: none;
   pointer-events: none;
   transform: translate(-50%, -50%);
-}
+} */
 
 /* div.cursors div span {
   position: absolute;
