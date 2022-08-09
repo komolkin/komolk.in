@@ -302,6 +302,13 @@ section.times div {
   justify-content: space-between;
 }
 
+output,
+value {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  margin-top: 1px;
+}
+
 /* section.times output:after {
   content: "";
   display: inline-block;
