@@ -5,6 +5,12 @@
     <title>Ilya Komolkin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script
       defer
@@ -16,14 +22,12 @@
   </head>
   <body>
     <iframe
-      id="b6b0cc90-421a-4ae1-84b2-380a21831a77"
       class="head animate fadeIn queue10s"
-      src="https://www.vectary.com/viewer/v1/?model=b6b0cc90-421a-4ae1-84b2-380a21831a77&env=none&showInteractionPrompt=0"
+      src="https://my.spline.design/untitled-8130984b4b790ad09e70ae7aded23493/"
       frameborder="0"
       width="100%"
       height="100%"
-    >
-    </iframe>
+    ></iframe>
     <div class="description">
       <h3 class="animate fadeInUp queue2s">Ilya Komolkin</h3>
       <nav class="animate fadeInUp queue4s">
@@ -31,7 +35,7 @@
           ><span>Co-founder & Head of Design at </span>Rarible
           <span><sup>2019 → Now</sup></span></a
         >
-        <a href="https://yandex.ru" target="_blank"
+        <a href="https://ya.ru" target="_blank"
           ><span>Senior Product Designer at </span>Yandex
           <span><sup>2013 → 2019</sup></span></a
         >
@@ -44,7 +48,7 @@
           ><span>Curating "Turbo Focus" </span>playlist</a
         >
         <a href="https://github.com/komolkin" target="_blank"
-          ><span>Not sure what am I doing on </span>GitHub</a
+          ><span>Commiting using </span>GitHub</a
         >
         <!-- <a href="https://open.spotify.com/playlist/1FNG7s97Yk6bd2hsjkjXbr?si=890d427b40d2452a" target="_blank"><span>Curating "Unfocus" </span>playlist</a> -->
         <a href="https://twitter.com/dappdesigner" target="_blank"
@@ -55,21 +59,55 @@
           ><span>Join Rarible team <sup>✹</sup></span></a
         >
       </nav>
-      <form action="" class="animate fadeInUp queue6s">
-        <label for=""
-          >1 ETH = $<span id="stock-price">0000</span
-          ><span id="stock-price-cents">.00</span></label
-        >
-        <input placeholder="Amount" autofocus />
-        <button>Send</button>
-      </form>
+
+      <div class="widgets">
+        <div>
+          <section class="heart animate fadeInUp queue4s">
+            <div>
+              <label>Heart Rate</label>
+              <value><span class="rate">68</span> BPM</value>
+            </div>
+          </section>
+        </div>
+        <div>
+          <section class="times animate fadeInUp queue5s">
+            <div data-timezone="America/New_York">
+              <label>Brooklyn</label>
+              <output>00:00</output>
+            </div>
+            <div data-timezone="Europe/Lisbon">
+              <label>Lisbon</label>
+              <output>00:00</output>
+            </div>
+          </section>
+        </div>
+        <div>
+          <form action="" class="animate fadeInUp queue6s">
+            <div class="price" onclick="toggleDiv()">
+              <label>Ethereum</label>
+              <output class="animate fadeIn queue30s" for=""
+                >$<span id="stock-price">0000</span
+                ><span id="stock-price-cents">.00</span>
+              </output>
+            </div>
+            <div id="send-eth">
+              <input type="number" min="1" placeholder="Amount" autofocus />
+              <button>Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <div class="cursors">
-      <div><span></span></div>
+      <div class="circle"><span></span></div>
     </div>
-    <script src="web3.js"></script>
-    <script src="tip.js"></script>
-    <script src="price.js"></script>
-    <script src="cursors.js"></script>
+    <script src="js/web3.js"></script>
+    <script src="js/tip.js"></script>
+    <script src="js/price.js"></script>
+    <script src="js/cursors.js"></script>
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+    <script src="js/times.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/rate.js"></script>
   </body>
 </html>
