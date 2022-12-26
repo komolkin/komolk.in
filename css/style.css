@@ -1,18 +1,9 @@
 @import url("animation.css");
 
-@font-face {
-  font-family: "Manrope";
-  src: url("../fonts/manrope-bold.woff") format("woff");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Manrope";
-  src: url("../fonts/manrope-med#090b16ium.woff") format("woff");
-  font-weight: 600;
-}
-
 :root {
+  font-family: "Inter", sans-serif;
+  font-feature-settings: "ss01", "tnum";
+
   --page-back: #090b16;
   --page-fore: #111118;
   --page-font-size: 24px;
@@ -25,6 +16,11 @@
   --form-back: #111118;
   --form-fore: #ffffff;
   --form-border: #66666a;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 html {
@@ -48,13 +44,10 @@ html {
   -webkit-transform: translate(-50%, -50%) !important;
   -ms-transform: translate(-50%, -50%) !important;
   transform: translate(-50%, -50%) !important;
-  /* pointer-events: none; */
 }
 
 body {
-  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter var", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 1.4em;
   line-height: 1.6;
@@ -78,7 +71,6 @@ a {
   -webkit-transition: -webkit-all 0.3s ease;
   -moz-transition: -moz-all 0.3s ease;
   transition: all 0.3s ease;
-  /* pointer-events: auto !important; */
 }
 
 .description {
@@ -88,18 +80,12 @@ a {
 
 .description h3 {
   margin-top: 0;
-  font-weight: 800;
+  font-weight: 500;
 }
 
-/* .description h3:after {
-  content: "BETA";
-  font-size: 12px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  padding: 4px 10px;
-  position: absolute;
-  margin: 8px 10px;
-} */
+.value {
+  font-size: 14px;
+}
 
 nav {
   margin-top: -16px;
@@ -186,13 +172,6 @@ label {
 .price label {
   cursor: pointer;
 }
-
-/* form label {
-  grid-area: label;
-
-  display: block;
-  line-height: 1.4;
-} */
 
 form input {
   grid-area: input;
@@ -305,8 +284,7 @@ section.times div {
 output,
 value,
 .marquee {
-  font-family: "Space Mono", monospace;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 2px;
 }
 

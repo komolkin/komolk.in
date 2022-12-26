@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <script
       defer
       type="text/javascript"
@@ -81,7 +83,7 @@
           <section class="heart animate fadeInUp queue4s">
             <div>
               <label>Heart Rate</label>
-              <value><span class="rate">68</span> BPM</value>
+              <value class="value"><span class="rate">68</span> BPM</value>
             </div>
           </section>
         </div>
@@ -89,11 +91,11 @@
           <section class="times animate fadeInUp queue5s">
             <div data-timezone="America/New_York">
               <label>Brooklyn</label>
-              <output>00:00</output>
+              <output class="value">00:00</output>
             </div>
             <div data-timezone="Europe/Lisbon">
               <label>Lisbon</label>
-              <output>00:00</output>
+              <output class="value">00:00</output>
             </div>
           </section>
         </div>
@@ -101,8 +103,8 @@
           <form action="" class="animate fadeInUp queue6s">
             <div class="price" onclick="toggleDiv()">
               <label>Ethereum</label>
-              <output class="animate fadeIn queue30s" for=""
-                >$<span id="stock-price">0000</span
+              <output class="value animate fadeIn queue30s" for=""
+                ><sup>$</sup><span id="stock-price">0000</span
                 ><span id="stock-price-cents">.00</span>
               </output>
             </div>
