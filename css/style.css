@@ -303,7 +303,8 @@ section.times div {
 }
 
 output,
-value {
+value,
+.marquee {
   font-family: "Space Mono", monospace;
   font-size: 14px;
   margin-top: 2px;
@@ -336,6 +337,55 @@ section.times div:first-child {
   vertical-align: 2px;
   animation: heartbeat 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 } */
+
+.music {
+  font-size: 15px;
+
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  color: var(--form-fore);
+  padding: 12px 16px 16px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.music:hover {
+  background: rgba(255, 255, 255, 0.12);
+  -webkit-transition: -webkit-all 0.3s ease;
+  -moz-transition: -moz-all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.music img {
+  margin-top: 6px;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+.music label {
+  cursor: pointer;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  width: 100px;
+  height: 18px;
+  margin: 0;
+}
+
+.marquee p {
+  white-space: pre;
+  align-self: center;
+}
+
+.marquee p:after {
+  content: "   ";
+}
 
 ::selection {
   background: rgba(0, 0, 0, 0.2);
