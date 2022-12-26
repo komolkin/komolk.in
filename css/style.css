@@ -373,7 +373,7 @@ section.times div:first-child {
 .marquee {
   display: flex;
   overflow: hidden;
-  width: 110px;
+  width: 100px;
   height: 18px;
   margin: 0;
 }
