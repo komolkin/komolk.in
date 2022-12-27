@@ -30,7 +30,15 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* background: linear-gradient(180deg, #525669 0%, #535E77 12.5%, #5D7798 41.15%, #8A8CA9 72.4%, #F1A7B1 100%) fixed; */
+  /* background: linear-gradient(
+      180deg,
+      #525669 0%,
+      #535e77 12.5%,
+      #5d7798 41.15%,
+      #8a8ca9 72.4%,
+      #f1a7b1 100%
+    )
+    fixed; */
   padding: 0;
   margin: 0;
   /* cursor: none; */
@@ -197,6 +205,10 @@ form input:focus {
   outline: none;
 }
 
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
 .input-symbol-eth {
   position: relative;
 }
@@ -206,11 +218,11 @@ form button {
   appearance: none;
   border: none;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.95);
-  color: var(--form-back);
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.95);
   font: inherit;
   padding: 8px 14px;
-  font-weight: 600;
+  font-weight: 400;
 
   -webkit-transition: -webkit-all 0.3s ease;
   -moz-transition: -moz-all 0.3s ease;
@@ -218,7 +230,7 @@ form button {
 }
 
 form button:hover {
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   /* cursor: none; */
 }
@@ -301,7 +313,7 @@ value,
 } */
 
 section.times div:first-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* .rate:before {
@@ -342,8 +354,8 @@ section.times div:first-child {
   width: 36px;
   height: 36px;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.4);
+  /* -webkit-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .music label {
