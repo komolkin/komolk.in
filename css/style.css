@@ -299,6 +299,10 @@ section.times div:first-child {
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1); */
 }
 
+#big_play_button {
+  border: 0 !important;
+}
+
 .music label {
   cursor: pointer;
 }
