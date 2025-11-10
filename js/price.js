@@ -1,13 +1,73 @@
-const ws = new WebSocket("wss://ws.coincap.io/prices?assets=ethereum");
-let stockPriceDollars = document.getElementById("stock-price");
-let stockPriceCents = document.getElementById("stock-price-cents");
+// Wait for DOM to be ready
+document.addEventListener("DOMContentLoaded", function() {
+  const stockPriceDollars = document.getElementById("stock-price");
+  const stockPriceCents = document.getElementById("stock-price-cents");
 
-ws.onmessage = function (msg) {
-  let stockDollars = JSON.parse(msg.data);
-  stockPriceDollars.innerText = stockDollars.ethereum.substring(0, 4);
+  if (!stockPriceDollars || !stockPriceCents) {
+    console.error("Price display elements not found");
+    return;
+  }
 
-  let stockCents = JSON.parse(msg.data);
-  stockPriceCents.innerText = stockCents.ethereum.substring(4, 7);
-};
+  try {
+    const ws = new WebSocket("wss://ws.coincap.io/prices?assets=ethereum");
 
-// .substring(0, 4)
+    ws.onopen = function() {
+      console.log("WebSocket connected to CoinCap");
+    };
+
+    ws.onmessage = function (msg) {
+      try {
+        const data = JSON.parse(msg.data);
+        const price = parseFloat(data.ethereum);
+
+        if (isNaN(price)) {
+          console.error("Invalid price data:", data);
+          return;
+        }
+
+        // Format price: split into dollars and cents
+        const priceStr = price.toFixed(2);
+        const parts = priceStr.split(".");
+        
+        stockPriceDollars.innerText = parts[0];
+        stockPriceCents.innerText = "." + parts[1];
+      } catch (error) {
+        console.error("Error parsing price data:", error);
+      }
+    };
+
+    ws.onerror = function(error) {
+      console.error("WebSocket error:", error);
+      // Fallback: try fetching via HTTP API
+      fetchPriceFallback(stockPriceDollars, stockPriceCents);
+    };
+
+    ws.onclose = function() {
+      console.log("WebSocket closed");
+      // Try to reconnect or use fallback
+      fetchPriceFallback(stockPriceDollars, stockPriceCents);
+    };
+  } catch (error) {
+    console.error("Error creating WebSocket:", error);
+    // Fallback to HTTP API
+    fetchPriceFallback(stockPriceDollars, stockPriceCents);
+  }
+});
+
+// Fallback function to fetch price via HTTP API
+function fetchPriceFallback(dollarsEl, centsEl) {
+  fetch("https://api.coincap.io/v2/assets/ethereum")
+    .then(response => response.json())
+    .then(data => {
+      const price = parseFloat(data.data.priceUsd);
+      if (!isNaN(price)) {
+        const priceStr = price.toFixed(2);
+        const parts = priceStr.split(".");
+        dollarsEl.innerText = parts[0];
+        centsEl.innerText = "." + parts[1];
+      }
+    })
+    .catch(error => {
+      console.error("Error fetching price:", error);
+    });
+}
